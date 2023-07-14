@@ -9,6 +9,7 @@ services:
       - 0.0.0.0:9300:9300
     environment:
       discovery.type: single-node
+    user: root # fix elasticsearch user permission denied
     volumes:
       - ${SERVICE_DATA}:/usr/share/elasticsearch/data
     mem_limit: 20480m
