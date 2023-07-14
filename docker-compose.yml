@@ -3,7 +3,7 @@ version: '3.7'
 services:
   elasticsearch:
     restart: always
-    image: whatwewant/elasticsearch:${SERVICE_ELASTIC_SEARCH_IMAGE_VERSION}
+    image: elasticsearch:${SERVICE_ELASTIC_SEARCH_IMAGE_VERSION}
     ports:
       - 0.0.0.0:9200:9200
       - 0.0.0.0:9300:9300
