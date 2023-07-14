@@ -11,6 +11,7 @@ services:
       discovery.type: single-node
     volumes:
       - ${SERVICE_DATA}:/usr/share/elasticsearch/data
+    mem_limit: 20480m
       
 networks:
   default:
