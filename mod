@@ -1,3 +1,3 @@
 NAME=elasticsearch
-VERSION=v1.0.5
+VERSION=v1.0.6
 DESCRIPTION="ElasticSearch Service"
