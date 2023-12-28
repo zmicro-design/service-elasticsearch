@@ -12,6 +12,7 @@ services:
     volumes:
       - ${SERVICE_DATA}:/usr/share/elasticsearch/data
     mem_limit: 20480m
+    cpus: 4
       
 networks:
   default:
