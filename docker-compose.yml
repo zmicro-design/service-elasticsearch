@@ -11,8 +11,8 @@ services:
       discovery.type: single-node
     volumes:
       - ${SERVICE_DATA}:/usr/share/elasticsearch/data
-    mem_limit: 20480m
-    cpus: 4
+    mem_limit: ${SERVICE_ELASTIC_SEARCH_RESOURCE_LIMIT_MEMORY}
+    cpus: ${SERVICE_ELASTIC_SEARCH_RESOURCE_LIMIT_CPU}
       
 networks:
   default:
